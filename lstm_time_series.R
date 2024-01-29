@@ -35,7 +35,7 @@ exploratory
 
 
 # Feature engineering
-pce <- read.csv("C://Users//wl//Desktop//Work//[Website]//Demand Forecast//Kaggle Challenge//PCE.csv")
+pce <- read.csv("PCE.csv")
 pce$DATE <- ymd(pce$DATE) # convert to date format
 
 
