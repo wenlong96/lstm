@@ -46,7 +46,7 @@ We will first start with data preprocessing.
 # Data preprocessing
 
 ``` r
-df <- read.csv("C://Users//wl//Desktop//Work//[Website]//Demand Forecast//Kaggle Challenge//train.csv")
+df <- read.csv("train.csv")
 View(df) # 2013-01-01 to 2017-12-31
 
 unique(df$store)
@@ -167,7 +167,7 @@ unemployment rates, or GDP growth.
 # Feature engineering
 
 ``` r
-pce <- read.csv("C://Users//wl//Desktop//Work//[Website]//Demand Forecast//Kaggle Challenge//PCE.csv")
+pce <- read.csv("PCE.csv")
 pce$DATE <- ymd(pce$DATE) # convert to date format
 
 # rename DATE to lowercase and create year and month columns
